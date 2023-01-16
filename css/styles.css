@@ -1,3 +1,10 @@
+/*=================== Змінні ======================*/
+:root {
+   --main-background-color:#1D1E22;
+   --accent-color-headr: #B7C1D8;
+   --logo-color: #F9F9F9;
+}
+
 /*=================== Обнуление стилей ======================*/
 h1,
 h2,
@@ -19,9 +26,59 @@ a {
    padding: 0;
    margin: 0;
 }
+
+img {
+   display: block;
+   width: auto;
+   height: auto;
+}
+.list {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+}
+.link {
+   text-decoration: none;
+   list-style: none;
+}
+.body {
+   font-family: 'Roboto', sans-serif;
+   background-color: var(--main-background-color);
+}
+.container {
+   width: 1440px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+/*=================== Header ======================*/
+.page-header {
+   background-color: var(--main-background-color);
+}
+.header-container {
+   display: flex;
+}
+.logo-text {
+   font-family: 'Oswald', sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 1.46;
+   color: var(--logo-color);
+}
+.nav-page {
+   display: flex;
+   gap: 40px;
+}
+.nav-link {
+   font-size: 18px;
+   line-height: 1.22;
+   color: var(--accent-color-headr);
+}
 /*=================== What we do ======================*/
 .what {
-   background-color: #1D1E22;
+   background-color: var(--main-background-color);
 }
 .what__container {
    width: 375px;
@@ -131,3 +188,23 @@ a {
       column-gap: 30px;
    }
 }
+
+@font-face {
+   font-family: 'BebasNeue400';
+   src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'BebasNeue700';
+   src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'inter700';
+   src: url('Inter-Bold.otf') format('otf');
+   font-weight: 700;
+   font-style: normal;
+}
+===============================Guest================================================
