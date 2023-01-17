@@ -19,6 +19,67 @@ a {
    padding: 0;
    margin: 0;
 }
+/* ================ ОБЩИЕ СТИЛИ====================== */
+.button {
+   font-family: 'Inter';
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 122%;
+
+   color: #FFFFFF;
+
+   padding: 14px 39px;
+   background-image: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
+   border: inherit;
+   border-radius: 50px;
+   cursor: pointer;
+}
+/*=================== hero ======================*/
+.hero {
+   background-color: #1D1E22;
+}
+.hero__container {
+   width: 375px;
+   margin: 0 auto;
+   padding: 40px 15px;
+
+   text-align: center;
+}
+.hero__title {
+   margin-bottom: 15px;
+
+   font-family: 'Bebas Neue';
+   font-size: 80px;
+   font-weight: 700;
+   line-height: 80px;
+   color: #E8E9EE;
+}
+.hero__foto {
+   margin-bottom: 48px;
+}
+.hero__img {
+   background-image: linear-gradient(180deg, #6223A2 0%, #A141CE 47.4%, #FF1C60 100%);
+   border-radius: 338.5px;
+   width: 313px;
+   height: 440px;
+}
+.hero__subtitle {
+   margin-bottom: 8px;
+
+   font-family: 'Bebas Neue';
+   font-weight: 400;
+   font-size: 80px;
+   line-height: 96px;
+   border: 2px solid;
+
+   -webkit-text-stroke: 1px #FFFFFF;
+   background-image: radial-gradient(66.67% 66.67% at 50.09% 33.33%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); 
+}
+.hero__bottom-content {
+}
+.hero__button {
+   padding: 14px 46px;
+}
 /*=================== What we do ======================*/
 .what {
    background-color: #1D1E22;
@@ -78,21 +139,6 @@ a {
 }
 .what__button {
    margin: 44px 0px 45px 0px;
-
-   font-family: 'Inter';
-   font-size: 18px;
-   font-weight: 500;
-   line-height: 122%;
-
-   color: #FFFFFF;
-
-   padding: 14px 39px;
-   background-image: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
-   border: inherit;
-   border-radius: 50px;
-   cursor: pointer;
-}
-.button {
    padding: 14px 10px;
 }
 @media screen and (min-width:376px) {
@@ -108,7 +154,6 @@ a {
       width: 555px;
 
       padding: 26px;
-      text-align: center;
 
       background-color: #191F2E;
       border-radius: 50px;
