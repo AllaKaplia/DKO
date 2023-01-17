@@ -57,28 +57,68 @@ a {
 .hero__foto {
    margin-bottom: 48px;
 }
-.hero__img {
+.hero__img-rectangle1 {
+   display: none;
+}
+.hero__img-rectangle2 {
    background-image: linear-gradient(180deg, #6223A2 0%, #A141CE 47.4%, #FF1C60 100%);
    border-radius: 338.5px;
    width: 313px;
    height: 440px;
 }
-.hero__subtitle {
-   margin-bottom: 8px;
-
-   font-family: 'Bebas Neue';
-   font-weight: 400;
-   font-size: 80px;
-   line-height: 96px;
-   border: 2px solid;
-
-   -webkit-text-stroke: 1px #FFFFFF;
-   background-image: radial-gradient(66.67% 66.67% at 50.09% 33.33%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%); 
+.hero__img-rectangle3 {
+   display: none;
 }
-.hero__bottom-content {
+.hero__img-text {
+   background-image: url('../img/hero/allareeco.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   height: 99px;
+   width: 299px;
+   margin: 0 auto;
+   margin-bottom: 8px;
 }
 .hero__button {
    padding: 14px 46px;
+}
+@media screen and (min-width:376px) { 
+   .hero__container {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 40px 15px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .hero__foto {
+      display: flex;
+      align-items: center;
+   }
+   .hero__img-rectangle1,
+   .hero__img-rectangle3 {
+      display: block;
+      Width: 249px;
+      Height:351px;
+      background-image: linear-gradient(180deg, #6223A2 0%, #A141CE 47.4%, #FF1C60 100%);
+      border-radius: 338.5px;
+   }
+   .hero__img-rectangle2 {
+      margin: 0px 66px;
+      width: 440px;
+      height: 619px;
+   }
+   .hero__img-text {
+      background-image: url('../img/hero/allareeco1140.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      height: 150px;
+      width: 557px;
+      margin: 0 auto;
+      margin-bottom: 31px;
+   }
 }
 /*=================== What we do ======================*/
 .what {
