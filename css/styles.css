@@ -84,6 +84,8 @@ a {
 }
 @media screen and (min-width:376px) { 
    .hero__container {
+      position: relative;
+
       width: 1170px;
       margin: 0 auto;
       padding: 40px 15px;
@@ -92,11 +94,25 @@ a {
       flex-direction: column;
       align-items: center;
    }
+   .hero__container::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(180deg, rgba(127, 28, 252, 0.2) 0%, rgba(89, 220, 220, 0.2) 100%);
+      filter: blur(100px);
+      border-radius: 419.5px;
+      width: 445px;
+      height: 445px;
+      left: -200px;
+      top: 5px;
+   }
    .hero__foto {
       display: flex;
       align-items: center;
 
+      position: relative;
       z-index: 20;
+
+      margin-bottom: 25px;
    }
    .hero__img-rectangle1,
    .hero__img-rectangle3 {
@@ -107,23 +123,20 @@ a {
       border-radius: 338.5px;
    }
    .hero__img-rectangle2 {
-      position: relative;
 
       margin: 0px 66px;
 
       width: 440px;
       height: 619px;
    }
-   .hero__img-rectangle2::before {
+   .hero__foto::before {
       content: "";
-      background-image: url('../img/hero/playicon.png');
-      background-repeat: no-repeat;
       position: absolute;
-      z-index: 100;
-      top: 10px;
-      left: 10px;
-      width: 50px;
-      height: 50px;
+      background-image: url('../img/hero/playicon.png');
+      width: 118px;
+      height: 118px;
+      left: 285px;
+      bottom: 55px;
    }
    .hero__img-multi-layered {
       margin-top: -160px;
@@ -137,7 +150,10 @@ a {
       background-repeat: no-repeat;
       background-position: center;
       background-size: 557px, 1440px, 1440px, cover;
-      margin-bottom: 31px;
+      margin-bottom: 0px;
+   }
+   .hero__bottom-content {
+      margin-top: -110px;
    }
 }
 /*=================== What we do ======================*/
