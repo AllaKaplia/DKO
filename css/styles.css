@@ -207,4 +207,70 @@ img {
    font-weight: 700;
    font-style: normal;
 }
-===============================Guest================================================
+@font-face {
+    font-family: 'BebasNeue400';
+    src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue700';
+    src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter700';
+    src: url('Inter-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+
+/* ===============================Guest================================================ */
+
+.guest_img {
+    width: 383px;
+}
+.header-guest {
+    font-family: 'BebasNeue700';
+    font-size: 72px;
+    letter-spacing: 0.04em;
+    line-height: calc(72 / 72);
+    color: #FFFFFF;
+    margin: 0 0 60px 0;
+}
+.guest-name {
+    font-family: 'inter700';
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guest-working {
+    font-family: 'BebasNeue400';
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.guest-list {
+    display: flex;
+    gap: 29px;
+}
+.guest-item {
+    background-color: #191F2E;
+    border-radius: 30px;
+}
+.guest {
+    padding: 0 120px;
+}
+.guest-content {
+    padding: 43px 0;
+}
