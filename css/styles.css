@@ -1,3 +1,212 @@
+/*=================== Змінні ======================*/
+:root {
+   --main-background-color:#1D1E22;
+   --accent-color-headr: #B7C1D8;
+   --logo-color: #F9F9F9;
+}
+
+/*=================== Обнуление стилей ======================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+}
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+a {
+   text-decoration: none;
+   padding: 0;
+   margin: 0;
+}
+
+img {
+   display: block;
+   width: auto;
+   height: auto;
+}
+.list {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+}
+.link {
+   text-decoration: none;
+   list-style: none;
+}
+.body {
+   font-family: 'Roboto', sans-serif;
+   background-color: var(--main-background-color);
+}
+.container {
+   width: 1440px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+/*=================== Header ======================*/
+.page-header {
+   background-color: var(--main-background-color);
+}
+.header-container {
+   display: flex;
+}
+.logo-text {
+   font-family: 'Oswald', sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 1.46;
+   color: var(--logo-color);
+}
+.nav-page {
+   display: flex;
+   gap: 40px;
+}
+.nav-link {
+   font-size: 18px;
+   line-height: 1.22;
+   color: var(--accent-color-headr);
+}
+/*=================== What we do ======================*/
+.what {
+   background-color: var(--main-background-color);
+}
+.what__container {
+   width: 375px;
+   margin: 0 auto;
+   padding: 50px 15px; 
+}
+.what__title {
+   margin-bottom: 40px;
+
+   font-family: 'Bebas Neue';
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 100%;
+   color:  #D9D9D9;
+}
+.what__card {
+   display: flex;
+   flex-wrap: wrap;
+   row-gap: 20px;
+   column-gap: 20px;
+}
+.what__list {
+   width: 315px;
+
+   padding: 14px;
+   text-align: center;
+
+   background-color: #191F2E;
+   border-radius: 30px;
+}
+.what__img {
+   width: 290px;
+}
+.what__subtitle {
+   margin: 48px 0px 24px 0px;
+
+   font-family: 'Bebas Neue';
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 125%;
+   color: #FFFFFF;
+
+
+   text-transform: uppercase;
+}
+.what__text {
+   width: 244px;
+   margin: 0 auto;
+
+   font-family: 'Inter';
+   font-size: 16px;
+   line-height: 188%;
+   color: #C1C2C6;
+}
+.what__button {
+   margin: 44px 0px 45px 0px;
+
+   font-family: 'Inter';
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 122%;
+
+   color: #FFFFFF;
+
+   padding: 14px 39px;
+   background-image: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
+   border: inherit;
+   border-radius: 50px;
+   cursor: pointer;
+}
+.button {
+   padding: 14px 10px;
+}
+@media screen and (min-width:376px) {
+   .what__container {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 50px 15px; 
+   }
+   .what__title {
+      font-size: 72px;
+   }
+   .what__list {
+      width: 555px;
+
+      padding: 26px;
+      text-align: center;
+
+      background-color: #191F2E;
+      border-radius: 50px;
+   }
+   .what__img {
+      width: 503px;
+   }
+   .what__subtitle {
+      font-size: 36px;
+      line-height: 83%;
+   }
+   .what__text {
+      width: 483px;
+   }
+   .what__button {
+      margin: 74px 0px 45px 0px;
+   }
+   .what__card {
+      row-gap: 30px;
+      column-gap: 30px;
+   }
+}
+
+@font-face {
+   font-family: 'BebasNeue400';
+   src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'BebasNeue700';
+   src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'inter700';
+   src: url('Inter-Bold.otf') format('otf');
+   font-weight: 700;
+   font-style: normal;
+}
 @font-face {
     font-family: 'BebasNeue400';
     src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
@@ -15,41 +224,7 @@
     src: url('Inter-Bold.otf') format('otf');
     font-weight: 700;
     font-style: normal;
-}
-* {
-    padding: 0;
-    margin: 0;
-}
-body {
-    background-color: #1E1E1E;
-}
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.list {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-.link {
-    text-decoration: none;
-    list-style: none;
-}
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.container {
-    width: 1140px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 /* ===============================Guest================================================ */
 
 .guest_img {
