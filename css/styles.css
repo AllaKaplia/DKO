@@ -95,6 +95,8 @@ a {
    .hero__foto {
       display: flex;
       align-items: center;
+
+      z-index: 20;
    }
    .hero__img-rectangle1,
    .hero__img-rectangle3 {
@@ -105,18 +107,36 @@ a {
       border-radius: 338.5px;
    }
    .hero__img-rectangle2 {
+      position: relative;
+
       margin: 0px 66px;
+
       width: 440px;
       height: 619px;
    }
+   .hero__img-rectangle2::before {
+      content: "";
+      background-image: url('../img/hero/playicon.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 100;
+      top: 10px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+   }
+   .hero__img-multi-layered {
+      margin-top: -160px;
+      text-align: center;
+   }
    .hero__img-text {
-      background-image: url('../img/hero/allareeco1140.png');
+      width: 1440px;
+      height: 457px;
+
+      background-image: url('../img/hero/allareeco1140.png'), url('../img/hero/rectangle8.png'), url('../img/hero/rectangle9.png'), url('../img/hero/people.png');
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
-      height: 150px;
-      width: 557px;
-      margin: 0 auto;
+      background-size: 557px, 1440px, 1440px, cover;
       margin-bottom: 31px;
    }
 }
