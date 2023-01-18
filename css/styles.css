@@ -42,12 +42,12 @@ a {
    text-decoration: none;
    list-style: none;
 }
-.body {
+body {
    font-family: 'Roboto', sans-serif;
    background-color: var(--main-background-color);
 }
 .container {
-   width: 1440px;
+   width: 1140px;
    margin-right: auto;
    margin-left: auto;
    padding-left: 15px;
@@ -86,7 +86,7 @@ a {
    align-items: center;
 }
 .logo {
-   margin-right: 253px;
+   margin-right: 200px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -169,11 +169,6 @@ a {
 @media screen and (min-width:376px) { 
    .hero__container {
       position: relative;
-
-      width: 1170px;
-      margin: 0 auto;
-      padding: 40px 15px;
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -186,7 +181,7 @@ a {
       border-radius: 419.5px;
       width: 445px;
       height: 445px;
-      left: -200px;
+      left: -40px;
       top: 5px;
    }
    .hero__foto {
@@ -195,8 +190,6 @@ a {
 
       position: relative;
       z-index: 20;
-
-      margin-bottom: 25px;
    }
    .hero__img-rectangle1,
    .hero__img-rectangle3 {
@@ -227,7 +220,7 @@ a {
       text-align: center;
    }
    .hero__img-text {
-      width: 1440px;
+      width: 1140px;
       height: 457px;
 
       background-image: url('../img/hero/allareeco1140.png'), url('../img/hero/rectangle8.png'), url('../img/hero/rectangle9.png'), url('../img/hero/people.png');
@@ -246,9 +239,9 @@ a {
    background-color: var(--main-background-color);
 }
 .what__container {
-   width: 375px;
+   width: 1140px;
    margin: 0 auto;
-   padding: 50px 15px; 
+   padding: 50px 0px;
 }
 .what__title {
    margin-bottom: 40px;
@@ -304,9 +297,9 @@ a {
 }
 @media screen and (min-width:376px) {
    .what__container {
-      width: 1170px;
+      width: 1140px;
       margin: 0 auto;
-      padding: 50px 15px; 
+      padding: 50px 0; 
    }
    .what__title {
       font-size: 72px;
@@ -357,22 +350,22 @@ a {
    font-style: normal;
 }
 @font-face {
-    font-family: 'BebasNeue400';
-    src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+   font-family: 'BebasNeue400';
+   src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
 }
 @font-face {
-    font-family: 'BebasNeue700';
-    src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+   font-family: 'BebasNeue700';
+   src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
 }
 @font-face {
-    font-family: 'inter700';
-    src: url('Inter-Bold.otf') format('otf');
-    font-weight: 700;
-    font-style: normal;
+   font-family: 'inter700';
+   src: url('Inter-Bold.otf') format('otf');
+   font-weight: 700;
+   font-style: normal;
 }
 /* ===============================Guest================================================ */
 
