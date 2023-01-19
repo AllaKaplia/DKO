@@ -26,7 +26,6 @@ h2,
 h3,
 h4,
 h5,
-h6,
 p {
   margin: 0;
   padding: 0;
@@ -62,7 +61,7 @@ body {
    background-color: var(--main-background-color);
 }
 .container {
-   width: 1140px;
+   max-width: 1140px;
    margin-right: auto;
    margin-left: auto;
    padding-left: 15px;
@@ -484,6 +483,25 @@ body {
    font-weight: 700;
    font-style: normal;
 }
+@font-face {
+    font-family: 'BebasNeue400';
+    src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeue700';
+    src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inter700';
+    src: url('Inter-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* ===============================Guest================================================ */
 .guest_img {
    width: 383px;
@@ -600,7 +618,6 @@ body {
     display: block;
   }
 }
-
 .blog-img {
   margin-bottom: 32px;
 }
@@ -691,3 +708,174 @@ body {
 .blog-button-icon {
   margin-left: 9px;
 }
+/* ---------------FOOTHER------------------- */
+.foother {
+   background-color: #191F2E;
+}
+
+.foother-wrapper {
+   display: flex;
+}
+
+.foother-list {display: flex;}
+
+.foother-link {
+   font-family: inherit;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.2; 
+   
+   color: #FFFFFF;
+}
+
+.foot-form-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+
+   color: #FFFFFF;
+}
+
+.foot-email-input {
+   padding: 11px 14px;
+  
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 30px;
+   border: none;
+   background-color: #FFFFFF;
+}
+
+.foot-email-input::placeholder {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+
+   color: #666666;
+}
+
+.foot-email-btn {
+   display: block;
+   width: 145px;
+   padding: 13px 34px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.2;
+   
+   border-radius: 50px;
+   border: none;
+   background: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
+   color: #FFFFFF;
+   cursor: pointer;
+}
+
+.foot-form-wrapper {
+   display: flex;  
+   align-items: center;    
+}
+
+.foother-info-list {
+   display: flex;
+   gap: 42px;
+}
+
+.foot-info-link { 
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2px;
+   color: #FFFFFF;
+}
+
+.foot-text-end {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+
+   color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+    .foother-container{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }  
+ 
+   .foother-wrapper {  
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .foother-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 60px;}
+
+   .foot-logo {
+      margin-bottom: 40px;
+      text-align: center;
+   }
+
+   .foot-form-title{
+      text-align: center;
+      margin-bottom: 30px;
+   }
+   .foot-form-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 50px;   
+   }
+
+   .foother-info-list {
+      margin-bottom: 40px;
+   }
+}
+
+@media screen and (min-width: 1140px) {
+   .foother { 
+      position: relative;
+   }
+
+   .foother-container {
+      padding-top: 90px;
+   }
+
+   .foother-list {
+      flex-direction: row;
+      gap: 48px;
+      margin-right: 236px;
+   }
+   .foother-item {
+      margin-top: 26px;
+      margin-bottom: 30px;
+   }
+
+   .foot-form-email {
+      position: relative;
+      bottom: 60px;
+   }
+   .foot-form-title {
+      margin-bottom: 22px;
+   }
+   .foot-form-wrapper {
+      gap: 16px;
+   }
+
+   .foot-end-wrapper {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      padding: 30px 0;
+   }
+
+   .line {
+      position: absolute;
+      bottom: 76px;
+      width: 100vw;
+      border: 1px solid #0E121B;
+   }
