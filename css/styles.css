@@ -220,10 +220,7 @@ body {
       border-radius: 338.5px;
    }
    .hero__img-rectangle2 {
->>>>>>> main
-
-Alla Luiton4ik, [19.01.2023 16:07]
-width: 440px;
+  width: 440px;
   height: 619px;
 }
 .hero__foto::before {
@@ -345,29 +342,110 @@ width: 440px;
    .what__list {
       width: 555px;
     padding: 26px;
-
     background-color: #191f2e;
-    border-radius: 50px;
+    border-radius: 30px;
   }
   .what__img {
-    width: 503px;
+    width: 290px;
   }
   .what__subtitle {
-    font-size: 36px;
-    line-height: 83%;
+    margin: 48px 0px 24px 0px;
+  
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    color: #ffffff;
+  
+    text-transform: uppercase;
   }
   .what__text {
-    width: 483px;
+    width: 244px;
+    margin: 0 auto;
+  
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 188%;
+    color: #c1c2c6;
   }
   .what__button {
-    margin: 74px 0px 45px 0px;
+     margin: 44px 0px 45px 0px;
+     padding: 14px 10px;
   }
-  .what__card {
-    row-gap: 30px;
-    column-gap: 30px;
+  @media screen and (min-width:376px) {
+     .what__container {
+        width: 1140px;
+        margin: 0 auto;
+        padding: 50px 0; 
+     }
+     .what__title {
+        font-size: 72px;
+     }
+     .what__list {
+        width: 555px;
+      padding: 26px;
+  
+      background-color: #191f2e;
+      border-radius: 50px;
+    }
+    .what__img {
+      width: 503px;
+    }
+    .what__subtitle {
+      font-size: 36px;
+      line-height: 83%;
+    }
+    .what__text {
+      width: 483px;
+    }
+    .what__button {
+      margin: 74px 0px 45px 0px;
+    }
+    .what__card {
+      row-gap: 30px;
+      column-gap: 30px;
+    }
   }
-}
-
+  
+  @font-face {
+    font-family: "BebasNeue400";
+    src: url("BebasNeueRegular.woff2") format("woff2"),
+      url("BebasNeueRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "BebasNeue700";
+    src: url("BebasNeueBold.woff2") format("woff2"),
+      url("BebasNeueBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "inter700";
+    src: url("Inter-Bold.otf") format("otf");
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+     font-family: 'BebasNeue400';
+     src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+     font-weight: 400;
+     font-style: normal;
+  }
+  @font-face {
+     font-family: 'BebasNeue700';
+     src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+     font-weight: 700;
+     font-style: normal;
+  }
+  @font-face {
+     font-family: 'inter700';
+     src: url('Inter-Bold.otf') format('otf');
+     font-weight: 700;
+     font-style: normal;
+  }
+  
 @font-face {
   font-family: "BebasNeue400";
   src: url("BebasNeueRegular.woff2") format("woff2"),
