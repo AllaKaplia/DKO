@@ -1,9 +1,10 @@
 /*=================== Змінні ======================*/
 :root {
-   --main-background-color:#1D1E22;
-   --accent-color-header: #B7C1D8;
-   --logo-color: #F9F9F9;
-}
+   --main-background-color: #1d1e22;
+   --secondary-background-color: #191f2e;
+   --accent-color-header: #b7c1d8;
+   --logo-color: #f9f9f9;
+ }
 
 /*=================== Обнуление стилей ======================*/
 h1,
@@ -26,26 +27,36 @@ a {
    padding: 0;
    margin: 0;
 }
-/* ================ ОБЩИЕ СТИЛИ====================== */
-.img {
+img {
    display: block;
    width: auto;
    height: auto;
 }
+/* ================ ОБЩИЕ СТИЛИ====================== */
+body {
+   font-family: 'Roboto', sans-serif;
+   font-family: "Bebas Neue", sans-serif;
+   font-size: 16px;
+   background-color: var(--main-background-color);
+   color: var(--accent-color-header);
+}
+
 .list {
    padding: 0;
    margin: 0;
    text-decoration: none;
    list-style: none;
 }
+
 .link {
    text-decoration: none;
    list-style: none;
 }
-body {
-   font-family: 'Roboto', sans-serif;
-   background-color: var(--main-background-color);
+
+button {
+   cursor: pointer;
 }
+
 .container {
    width: 1140px;
    margin-right: auto;
@@ -66,7 +77,6 @@ body {
    background-image: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
    border: inherit;
    border-radius: 50px;
-   cursor: pointer;
 }
 /*=================== Header ======================*/
 
@@ -120,15 +130,16 @@ body {
 }
 /*=================== hero ======================*/
 .hero {
-   background-color: #1D1E22;
+   background-color: var(--main-background-color);
 }
+
 .hero__container {
-   width: 375px;
    margin: 0 auto;
    padding: 40px 15px;
 
    text-align: center;
 }
+
 .hero__title {
    margin-bottom: 15px;
 
@@ -138,18 +149,22 @@ body {
    line-height: 80px;
    color: #E8E9EE;
 }
+
 .hero__foto {
    margin-bottom: 48px;
 }
+
 .hero__img-rectangle1 {
    display: none;
 }
+
 .hero__img-rectangle2 {
    background-image: linear-gradient(180deg, #6223A2 0%, #A141CE 47.4%, #FF1C60 100%);
    border-radius: 338.5px;
    width: 313px;
    height: 440px;
 }
+
 .hero__img-rectangle3 {
    display: none;
 }
@@ -412,10 +427,356 @@ body {
 }
 .guest {
    background-color: var(--main-background-color);
-   padding: 0 120px;
+   padding-top: 120px;
+   padding-bottom: 120px;
 }
 .guest-content {
    padding: 43px 0;
 }
-Footer
-© 2023 GitHub, Inc.
+/* =====/BLOG====== */
+.blog {
+   background: #191F2E;
+}
+
+.blog .container {
+   max-width: 100%;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+ 
+@media screen and (min-width: 375px) {
+   .blog .container {
+     width: 345px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+}
+
+@media screen and (min-width: 1170px) {
+   .blog .container {
+     width: 1170px;
+   }
+}
+
+.blog {
+   padding-top: 80px;
+   padding-bottom: 80px;
+   background-color: var(--secondary-background-color);
+}
+@media screen and (min-width: 1170px) {
+   .blog {
+     padding-top: 92px;
+     padding-bottom: 122px;
+   }
+}
+.blog-title {
+   margin-bottom: 40px;
+ 
+   font-family: "Bebas Neue";
+   font-size: 36px;
+   line-height: 1;
+   text-align: center;
+   color: #d9d9d9;
+}
+ 
+@media screen and (min-width: 1170px) {
+   .blog-title {
+     font-size: 72px;
+     letter-spacing: 0.04em;
+     text-transform: uppercase;
+     text-align: start;
+ 
+     color: #ffffff;
+   }
+}
+ 
+.blog-item {
+   max-width: 345px;
+}
+
+@media screen and (min-width: 1170px) {
+   .blog-item {
+     max-width: 555px;
+   }
+}
+
+.blog-item:nth-child(2) {
+   display: none;
+ }
+
+@media screen and (min-width: 1170px) {
+   .blog-item:nth-child(2) {
+     display: block;
+   }
+}
+
+.blog-img {
+   margin-bottom: 32px;
+}
+ 
+@media screen and (min-width: 1170px) {
+   .blog-list {
+     display: flex;
+     flex-direction: wrap;
+     gap: 30px;
+   }
+}
+
+.blog-show-wrapper {
+   display: flex;
+   align-items: center;
+   padding-left: 23px;
+ 
+   margin-bottom: 18px;
+   /* justify-content: space-evenly; */
+}
+
+@media screen and (min-width: 1170px) {
+   .blog-show-wrapper {
+  
+      padding-left: 0px;
+   }
+}
+ 
+.show-type {
+   padding: 6px 12px;
+   margin-right: 16px;
+   font-family: "Inter";
+   font-size: 12px;
+   line-height: 1.5;
+   text-align: center;
+ 
+   color: #ffffff;
+   background: #0e121b;
+   box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+   border-radius: 36px;
+}
+ 
+.show-date {
+   font-weight: 700;
+ 
+   line-height: 1;
+   color: #dfe5f5;
+}
+ 
+.blog-item-text {
+   margin-bottom: 32px;
+   font-family: "Inter";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 1.6;
+   text-align: center;
+ 
+   color: #ffffff;
+}
+ 
+@media screen and (min-width: 1170px) {
+   .blog-item-text {
+      text-align: start;
+   }
+}
+ 
+.blog-item-button {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+   padding: 17px 22px;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: "Inter";
+   font-weight: 500;
+   line-height: 1.19;
+   text-align: center;
+ 
+   color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 30px;
+   background-color: transparent;
+}
+ 
+@media screen and (min-width: 1170px) {
+   .blog-item-button {
+      margin: 0;
+   }
+}
+ 
+.blog-button-icon {
+   margin-left: 9px;
+}
+/* ---------------FOOTHER------------------- */
+.foother {
+   background-color: #191F2E;
+}
+ 
+.foother-wrapper {
+   display: flex;
+}
+ 
+.foother-list {display: flex;}
+
+.foother-link {
+   font-family: inherit;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.2; 
+    
+   color: #FFFFFF;
+}
+ 
+.foot-form-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.2;
+   letter-spacing: 0.02em;
+ 
+   color: #FFFFFF;
+}
+ 
+.foot-email-input {
+   padding: 11px 14px;
+   
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 30px;
+   border: none;
+   background-color: #FFFFFF;
+}
+ 
+.foot-email-input::placeholder {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+ 
+   color: #666666;
+}
+ 
+.foot-email-btn {
+   display: block;
+   width: 145px;
+   padding: 13px 34px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.2;
+    
+   border-radius: 50px;
+   border: none;
+   background: linear-gradient(273.31deg, #7F1CFC 0.79%, #FF1C60 98.6%);
+   color: #FFFFFF;
+   cursor: pointer;
+ }
+ 
+.foot-form-wrapper {
+   display: flex;  
+   align-items: center;    
+}
+ 
+.foother-info-list {
+   display: flex;
+   gap: 42px;
+}
+ 
+.foot-info-link { 
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2px;
+   color: #FFFFFF;
+}
+ 
+.foot-text-end {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+ 
+   color: #FFFFFF;
+}
+ 
+@media screen and (max-width: 767px) {
+   .foother-container{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }  
+  
+   .foother-wrapper {  
+      flex-direction: column;
+      justify-content: center;
+   }
+ 
+   .foother-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 60px;
+   }
+ 
+   .foot-logo {
+      margin-bottom: 40px;
+      text-align: center;
+   }
+ 
+   .foot-form-title{
+      text-align: center;
+      margin-bottom: 30px;
+   }
+   
+   .foot-form-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 50px;   
+   }
+ 
+   .foother-info-list {
+      margin-bottom: 40px;
+   }
+ }
+ 
+@media screen and (min-width: 1140px) {
+   .foother { 
+      position: relative;
+   }
+ 
+   .foother-container {
+      padding-top: 90px;
+   }
+ 
+   .foother-list {
+      flex-direction: row;
+      gap: 48px;
+      margin-right: 236px;
+   }
+   .foother-item {
+      margin-top: 26px;
+      margin-bottom: 30px;
+   }
+ 
+   .foot-form-email {
+      position: relative;
+      bottom: 60px;
+   }
+   
+   .foot-form-title {
+      margin-bottom: 22px;
+   }
+    
+   .foot-form-wrapper {
+      gap: 16px;
+   }
+ 
+   .foot-end-wrapper {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      padding: 30px 0;
+   }
+ 
+   .line {
+      position: absolute;
+      bottom: 76px;
+      width: 100vw;
+      border: 1px solid #0E121B;
+   }
+}
