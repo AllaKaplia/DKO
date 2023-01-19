@@ -1,3 +1,412 @@
+Alla Luiton4ik, [19.01.2023 16:07]
+/*=================== Змінні ======================*/
+:root {
+  --main-background-color: #1d1e22;
+  --secondary-background-color: #191f2e;
+  --accent-color-headr: #b7c1d8;
+  --logo-color: #f9f9f9;
+}
+
+/*=================== Обнуление стилей ======================*/
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 16px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+   cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+/* ================ ОБЩИЕ СТИЛИ====================== */
+.img {
+   display: block;
+   width: auto;
+   height: auto;
+}
+.list {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+}
+.link {
+   text-decoration: none;
+   list-style: none;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: var(--main-background-color);
+}
+.container {
+   width: 1140px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.button {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 122%;
+
+  color: #ffffff;
+
+  padding: 14px 39px;
+  background-image: linear-gradient(273.31deg, #7f1cfc 0.79%, #ff1c60 98.6%);
+  border: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/*=================== Header ======================*/
+
+.page-header {
+   background-color: var(--main-background-color);
+}
+
+.header-container {
+   padding-top: 40px;
+   padding-bottom: 93px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.nav-site {
+   display: flex;
+   align-items: center;
+}
+.logo {
+   margin-right: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.logo-text {
+   font-family: 'Oswald', sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 1.46;
+   color: var(--logo-color);
+}
+.nav-page {
+   margin-right: 161px;
+   display: flex;
+   gap: 40px;
+}
+.nav-link {
+   font-size: 18px;
+   line-height: 1.22;
+   color: var(--accent-color-header);
+}
+.nav-link:hover 
+.button-header {
+   padding: 13px 20px;
+
+   font-family: 'Inter', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   border-color: transparent;
+}
+/*=================== hero ======================*/
+.hero {
+  background-color: #1d1e22;
+}
+.hero__container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 40px 15px;
+
+  text-align: center;
+}
+.hero__title {
+  margin-bottom: 15px;
+
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #e8e9ee;
+}
+.hero__foto {
+  margin-bottom: 48px;
+}
+.hero__img-rectangle1 {
+  display: none;
+}
+.hero__img-rectangle2 {
+  background-image: linear-gradient(
+    180deg,
+    #6223a2 0%,
+    #a141ce 47.4%,
+    #ff1c60 100%
+  );
+  border-radius: 338.5px;
+  width: 313px;
+  height: 440px;
+}
+.hero__img-rectangle3 {
+  display: none;
+}
+.hero__img-text {
+  background-image: url("../img/hero/allareeco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 99px;
+  width: 299px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.hero__button {
+  padding: 14px 46px;
+}
+@media screen and (min-width:376px) { 
+   .hero__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .hero__container::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(180deg, rgba(127, 28, 252, 0.2) 0%, rgba(89, 220, 220, 0.2) 100%);
+      filter: blur(100px);
+      border-radius: 419.5px;
+      width: 445px;
+      height: 445px;
+      left: -40px;
+      top: 5px;
+   }
+   .hero__foto {
+      display: flex;
+      align-items: center;
+
+      position: relative;
+      z-index: 20;
+   }
+   .hero__img-rectangle1,
+   .hero__img-rectangle3 {
+      display: block;
+      Width: 249px;
+      Height:351px;
+      background-image: linear-gradient(180deg, #6223A2 0%, #A141CE 47.4%, #FF1C60 100%);
+      border-radius: 338.5px;
+   }
+   .hero__img-rectangle2 {
+>>>>>>> main
+
+Alla Luiton4ik, [19.01.2023 16:07]
+width: 440px;
+  height: 619px;
+}
+.hero__foto::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/hero/playicon.png");
+  width: 118px;
+  height: 118px;
+  left: 285px;
+  bottom: 55px;
+}
+.hero__img-multi-layered {
+  margin-top: -160px;
+  text-align: center;
+}
+.hero__img-text {
+  width: 1440px;
+  height: 457px;
+  width: 440px;
+  height: 619px;
+}
+   .hero__foto::before {
+      content: "";
+      position: absolute;
+      background-image: url('../img/hero/playicon.png');
+      width: 118px;
+      height: 118px;
+      left: 285px;
+      bottom: 55px;
+   }
+   .hero__img-multi-layered {
+      margin-top: -160px;
+      text-align: center;
+   }
+   .hero__img-text {
+      width: 1140px;
+      height: 457px;
+
+      background-image: url('../img/hero/allareeco1140.png'), url('../img/hero/rectangle8.png'), url('../img/hero/rectangle9.png'), url('../img/hero/people.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 557px, 1440px, 1440px, cover;
+      margin-bottom: 0px;
+   }
+   .hero__bottom-content {
+      margin-top: -110px;
+   }
+}
+
+/*=================== What we do ======================*/
+.what {
+  background-color: var(--main-background-color);
+}
+.what__container {
+   width: 1140px;
+   margin: 0 auto;
+   padding: 50px 0px;
+}
+.what__title {
+  margin-bottom: 40px;
+
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #d9d9d9;
+}
+.what__card {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+.what__list {
+  width: 315px;
+
+  padding: 14px;
+  text-align: center;
+
+  background-color: #191f2e;
+  border-radius: 30px;
+}
+.what__img {
+  width: 290px;
+}
+.what__subtitle {
+  margin: 48px 0px 24px 0px;
+
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
+.what__text {
+  width: 244px;
+  margin: 0 auto;
+
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 188%;
+  color: #c1c2c6;
+}
+.what__button {
+   margin: 44px 0px 45px 0px;
+   padding: 14px 10px;
+}
+@media screen and (min-width:376px) {
+   .what__container {
+      width: 1140px;
+      margin: 0 auto;
+      padding: 50px 0; 
+   }
+   .what__title {
+      font-size: 72px;
+   }
+   .what__list {
+      width: 555px;
+    padding: 26px;
+
+    background-color: #191f2e;
+    border-radius: 50px;
+  }
+  .what__img {
+    width: 503px;
+  }
+  .what__subtitle {
+    font-size: 36px;
+    line-height: 83%;
+  }
+  .what__text {
+    width: 483px;
+  }
+  .what__button {
+    margin: 74px 0px 45px 0px;
+  }
+  .what__card {
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+}
+
+@font-face {
+  font-family: "BebasNeue400";
+  src: url("BebasNeueRegular.woff2") format("woff2"),
+    url("BebasNeueRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BebasNeue700";
+  src: url("BebasNeueBold.woff2") format("woff2"),
+    url("BebasNeueBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "inter700";
+  src: url("Inter-Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+   font-family: 'BebasNeue400';
+   src: url('BebasNeueRegular.woff2') format('woff2'), url('BebasNeueRegular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'BebasNeue700';
+   src: url('BebasNeueBold.woff2') format('woff2'), url('BebasNeueBold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'inter700';
+   src: url('Inter-Bold.otf') format('otf');
+   font-weight: 700;
+   font-style: normal;
+}
+/* ===============================Guest================================================ */
 .guest_img {
    width: 383px;
 }
