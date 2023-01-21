@@ -48,6 +48,14 @@
     border-radius: 50px;
 }
 
+/* .partners-list-item:nth-child(3) {
+   width: 258px;
+} */
+
+.smaller {
+   width: 258px;
+}
+
 .partner-image {
     /* z-index: 1; */
 
